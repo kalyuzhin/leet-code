@@ -20,6 +20,9 @@
 using namespace std;
 
 // https://leetcode.com/problems/zigzag-conversion/description/
-string convert(string s, int numRows);
+string convert(const string &s, int numRows);
+
+template<typename T>
+using matrix = vector<vector<T>>;
 
 #endif //LEETCODE_MEDIUM_H

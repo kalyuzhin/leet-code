@@ -4,11 +4,13 @@
 #include <ios>
 #include <iostream>
 #include "easy/easy.h"
+#include "medium/medium.h"
 
 using namespace std;
 
 using ll = long long;
 using ull = unsigned long long;
+using str = string;
 
 template<typename T>
 using v = vector<T>;
@@ -22,6 +24,9 @@ inline std::ostream &operator<<(std::ostream &os, const v<T> &vec) {
 }
 
 void solve() {
+    str s{"PAYPALISHIRING"};
+    cout << s.size() << '\n';
+    cout << convert(s, 3);
 }
 
 int main() {
