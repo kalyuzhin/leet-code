@@ -25,4 +25,7 @@ string convert(const string &s, int numRows);
 template<typename T>
 using matrix = vector<vector<T>>;
 
+// https://leetcode.com/problems/container-with-most-water/
+int maxArea(vector<int>& height);
+
 #endif //LEETCODE_MEDIUM_H

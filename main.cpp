@@ -24,9 +24,8 @@ inline std::ostream &operator<<(std::ostream &os, const v<T> &vec) {
 }
 
 void solve() {
-    str s{"PAYPALISHIRING"};
-    cout << s.size() << '\n';
-    cout << convert(s, 3);
+    v<int> vec{8, 7, 2, 1};
+    cout << maxArea(vec);
 }
 
 int main() {
