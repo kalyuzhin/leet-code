@@ -6,20 +6,16 @@
 #include "medium.h"
 
 ListNode *removeNthFromEnd(ListNode *head, int n) {
+    ListNode *dummy = new ListNode(NULL, head);
     ListNode *cur = head;
-    ListNode *prev = cur;
-    int i = 1;
-    while (cur->next != nullptr) {
-        if (i >= n - 1) {
-            prev = cur;
-            i = 1;
-        }
-        ++i;
+    ListNode *prev = dummy;
+    for (size_t i = 0; i != n; ++i) {
         cur = cur->next;
     }
-    if (prev == cur) {
-        return nullptr;
+    while (cur != nullptr) {
+        cur = cur->next;
+        prev = prev->next;
     }
-    prev->next = prev->next == nullptr ? nullptr : prev->next->next;
-    return head;
+    prev->next = prev->next->next;
+    return dummy->next;
 }
