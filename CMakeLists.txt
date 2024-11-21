@@ -18,4 +18,6 @@ add_executable(LeetCode main.cpp
         easy/merge_two_sorted_lists.cpp
         medium/medium.h
         medium/zigzag_conversion.cpp
-        medium/container_with_most_water.cpp)
+        medium/container_with_most_water.cpp
+        medium/remove_nth_node_from_end_of_list.cpp
+        medium/longest_substring_without_repeating_characters.cpp)

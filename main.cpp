@@ -3,7 +3,7 @@
 
 #include <ios>
 #include <iostream>
-#include "easy/easy.h"
+//#include "easy/easy.h"
 #include "medium/medium.h"
 
 using namespace std;
@@ -24,8 +24,19 @@ inline std::ostream &operator<<(std::ostream &os, const v<T> &vec) {
 }
 
 void solve() {
-    v<int> vec{8, 7, 2, 1};
-    cout << maxArea(vec);
+    str s1 = "bpfbhmipx";
+    str s2 = "abcabcbb";
+    str s3 = "bbbbb";
+    str s4 = "pwwkew";
+    str s5 = "dvdf";
+    str s6 = "ckilbkd";
+    str s7 = "abba";
+    str s8 = "aabaab!bb";
+    vector<str> strs = {s1, s2, s3, s4, s5, s6, s7, s8};
+    for (str s: strs) {
+        cout << lengthOfLongestSubstring(s) << "\n";
+    }
+
 }
 
 int main() {

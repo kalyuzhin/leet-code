@@ -26,6 +26,24 @@ template<typename T>
 using matrix = vector<vector<T>>;
 
 // https://leetcode.com/problems/container-with-most-water/
-int maxArea(vector<int>& height);
+int maxArea(vector<int> &height);
+
+// https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+struct ListNode {
+    int val;
+    ListNode *next;
+
+    ListNode() : val(0), next(nullptr) {}
+
+    ListNode(int x) : val(x), next(nullptr) {}
+
+    ListNode(int x, ListNode *next) : val(x), next(next) {}
+};
+
+ListNode *removeNthFromEnd(ListNode *head, int n);
+
+// https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+int lengthOfLongestSubstring(string &s);
+
 
 #endif //LEETCODE_MEDIUM_H
