@@ -16,6 +16,7 @@
 #include <stack>
 #include <queue>
 #include <iostream>
+#include <limits>
 
 using namespace std;
 
@@ -44,6 +45,9 @@ ListNode *removeNthFromEnd(ListNode *head, int n);
 
 // https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
 int lengthOfLongestSubstring(string &s);
+
+// https://leetcode.com/problems/reverse-integer/
+int reverse(int x);
 
 
 #endif //LEETCODE_MEDIUM_H

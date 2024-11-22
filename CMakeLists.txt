@@ -20,4 +20,5 @@ add_executable(LeetCode main.cpp
         medium/zigzag_conversion.cpp
         medium/container_with_most_water.cpp
         medium/remove_nth_node_from_end_of_list.cpp
-        medium/longest_substring_without_repeating_characters.cpp)
+        medium/longest_substring_without_repeating_characters.cpp
+        medium/reverse_integer.cpp)
